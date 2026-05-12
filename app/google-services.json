@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "990963536690",
+    "firebase_url": "https://authcares-12c89-default-rtdb.firebaseio.com",
+    "project_id": "authcares-12c89",
+    "storage_bucket": "authcares-12c89.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990963536690:android:41c69d2dc5eb09536d7d2b",
+        "android_client_info": {
+          "package_name": "com.authcares.sensorlogger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUqOwdpRzd4gNbSMOsLswC2GIKKHYSnoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990963536690:android:f63a8222655136306d7d2b",
+        "android_client_info": {
+          "package_name": "com.authcares.wear"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUqOwdpRzd4gNbSMOsLswC2GIKKHYSnoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

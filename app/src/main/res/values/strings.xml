@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AuthCares</string>
+    <string name="presiona_iniciar">Presiona Iniciar</string>
+    <string name="esperando_sensores">— esperando sensores —</string>
+    <string name="iniciar">▶ Iniciar</string>
+</resources>
