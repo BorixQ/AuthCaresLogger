@@ -2,7 +2,7 @@
 
 App para Samsung Galaxy Watch FE (Wear OS) que captura datos biométricos en tiempo real y los transmite a Firebase Realtime Database para su visualización en el dashboard web.
 
-**Dashboard web:** [https://authcares-12c89.web.app/dashboard](https://authcares-12c89.web.app/dashboard)
+**Dashboard web:** configura la visualización con tu propio proyecto Firebase.
 
 ---
 
@@ -28,7 +28,7 @@ App para Samsung Galaxy Watch FE (Wear OS) que captura datos biométricos en tie
 - SDK de Wear OS (API 30 mínimo)
 - Dispositivo físico: Samsung Galaxy Watch FE con Wear OS 3.0+
   - ⚠️ El emulador no tiene sensores reales; usar el reloj físico para pruebas completas
-- Cuenta Firebase con acceso al proyecto `authcares-12c89`
+- Cuenta Firebase con acceso al proyecto `TU_PROYECTO_FIREBASE`
 
 ---
 
@@ -54,21 +54,21 @@ app/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/BorixQ/AuthCares.git
-cd AuthCares
+git clone https://github.com/BorixQ/AuthCaresLogger.git
+cd AuthCaresLogger
 ```
 
 ### 2. Agregar google-services.json
 
 Este archivo **no está en el repositorio** por seguridad. Debes descargarlo manualmente:
 
-1. Ve a [Firebase Console](https://console.firebase.google.com) → proyecto `authcares-12c89`
+1. Ve a [Firebase Console](https://console.firebase.google.com) → proyecto `TU_PROYECTO_FIREBASE`
 2. **Project Settings → General → Your apps**
 3. Descarga `google-services.json`
 4. Colócalo en `app/google-services.json`
 
 ```
-AuthCares/
+AuthCaresLogger/
 └── app/
     └── google-services.json   ← va aquí
 ```
@@ -133,7 +133,7 @@ Los datos se escriben en tiempo real en:
 
 ```
 sensor_data/
-  dc16c548a32f6521/
+  DEVICE_ID/
     accelerometer:
       x: 0.123
       y: 9.81
@@ -147,9 +147,9 @@ sensor_data/
       timestamp: 1764805106116
 ```
 
-**Nodo leído por el dashboard web:** `sensor_data/dc16c548a32f6521`
+**Nodo leído por el dashboard web:** `sensor_data/DEVICE_ID`
 
-> ⚠️ Actualmente el ID de dispositivo (`dc16c548a32f6521`) está hardcodeado. La arquitectura multi-usuario se implementará en el Paso 4.
+> ⚠️ Actualmente el ID de dispositivo (`DEVICE_ID`) está hardcodeado. La arquitectura multi-usuario se implementará en el Paso 4.
 
 ---
 
@@ -189,11 +189,12 @@ Paso 6 — Exportación de historial a CSV/JSON para entrenamiento
 
 ---
 
-## Proyecto relacionado
+## Proyectos relacionados
 
-- **Queñuaris** — ganador global NASA Space Apps Challenge 2024
-  Pipeline geoespacial ML para reforestación con Polylepis
+- **Queñaris** — pipeline geoespacial para selección de sitios de reforestación con Polylepis
   [github.com/BorixQ/QuenarisDA](https://github.com/BorixQ/QuenarisDA)
+- **AuthCares — ESP32** — firmware de sensores con comunicación MQTT.
+  [github.com/BorixQ/AuthCares-ESP32](https://github.com/BorixQ/AuthCares-ESP32)
 
 ---
 
